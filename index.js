@@ -10,7 +10,7 @@ const router = require("./routes/index.routes");
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
